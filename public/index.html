@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Shopping Assistant</div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for products...">
+            <button id="search-button">Search</button>
+        </div>
+        <div class="nav-links">
+            <a href="#" id="home-link">Home</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>All Products</h2>
+        <div id="product-container" class="product-grid"></div>
+
+        <h2 id="recommended-section-title" style="display: none;">Recommended Items</h2>
+        <div id="recommended-container" class="product-grid"></div>
+
+        <div class="chatbox">
+            <div class="chatbox-header">Smart Chatbox</div>
+            <div id="chatbox-messages" class="chatbox-messages"></div>
+            <div class="chatbox-footer">
+                <input id="chatbox-input" type="text" placeholder="Type your message...">
+                <button id="chatbox-send">Send</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@huggingface/inference"></script>
+    <script src="script.js"></script>
+</body>
+</html>
